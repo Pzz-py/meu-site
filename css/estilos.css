@@ -1,17 +1,17 @@
-/*Reset CSS*/
+/*Reset CSs*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins" , sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 body{
-    width:100;
-    height:100vh;
+    width: 100%;
+    height: 100vh;
     background-color: #333;
     color:#FFF;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: space-between;
 }
 a{
@@ -22,7 +22,7 @@ a{
 h1{
     transition: 0.2s ease-in-out;
 }
-/HEADER/
+/*HEADER*/
 header{
     background-color: #222;
     padding: 25px;
@@ -32,34 +32,36 @@ header{
 }
 header h1{
     font-size: 2.8em;
-    font-weight: 600;
+    font-weight: 200;
     cursor: pointer;
 }
 header nav{
-    display:flex;
-    align-itens:center;
-
+    display: flex;
+    align-items: center;
 }
 header nav a{
-    font-size: 2em;
-    margin-left: 1.4em;
-    padding:14px;
+    margin-right: 1.3em;
+    font-size: 1.5em;
+    padding: 10px;
 }
-header nav a:nth-child(4){
-    margin-right: 0em;
+header nav a: :nth-child(4){
+    margin-right: 0;
+}
+header h1, a{
+    color: #FFF;
 }
 header h1:hover, a:hover{
     color: #00E0FF;
 }
-/Main content/
+/*MAIN*/
 main{
     padding: 5%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 main .main-content{
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 main .main-content h2{
@@ -72,21 +74,32 @@ main .main-content .text{
 main .main-content .text p{
     width: 75%;
     font-size: 1.2em;
-    font-weight: 300px;
+    font-weight: 300;
     line-height: 1.6em;
-    padding:0 5%;
+    padding: 0 5%;
 }
-/Cards/
-main .techs .cards-container{
-    display:flex;
+/*Cards*/
+main .techs .cards-cotainer{
+    display: flex;
     align-items: center;
 }
-main .techs .cards-container .card{
+main .techs .cards-cotainer .card{
     width: 120px;
     height: 120px;
     padding: 10%;
-    background-color: #FFF;
+    background-color: #eee;
     border-radius: 8px;
     margin-right: 1.8em;
-    
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+main .techs .cards-container .card:nth-child(4){
+    margin-right: 0em;
+}
+main .techs .cards-container .card img{
+    width: 60%;
+    transition: 0.2s ease-in-out;
 }
